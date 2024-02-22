@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Row from "./components/common/Row";
+import AddToDoItem from "./components/AddToDoItem";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" lg:flex lg:flex-row h-[100vh] items-start justify-between px-2 md:px-10 pt-4 bg-slate-300">
+      <AddToDoItem />
+      <ToDoList />
     </div>
   );
 }
